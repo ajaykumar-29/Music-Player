@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.coil.compose)
     implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.navigation.compose)
     ksp(libs.hilt.android.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

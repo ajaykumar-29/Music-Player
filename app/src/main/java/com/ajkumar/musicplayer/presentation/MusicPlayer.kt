@@ -14,17 +14,7 @@ import androidx.core.net.toUri
 fun MusicPlayer() {
     MusicPlayerTheme {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//            AudioListScreen(modifier = Modifier.padding(innerPadding))
-            AudioPlayerScreen(
-                modifier = Modifier.padding(innerPadding),
-                audio = Audio(
-                    id = 50,
-                    title = "adhuri-kahani-jo-na-hosaki-puri-hindi-song-236791",
-                    artist = "<unknown>",
-                    duration = 222720,
-                    contentUri = "content://media/external/audio/media/50".toUri()
-                )
-            )
+            MusicPlayerNav(modifier = Modifier.padding(innerPadding))
         }
     }
 }
